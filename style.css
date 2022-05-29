@@ -120,10 +120,12 @@ img {
 .orange-divider {
   margin: 0.5em auto;
 }
-
+.secondary {
+  text-align: center;
+}
 .card {
   margin: 2em auto;
-  text-align: center;
+  padding: 0.5em;
 }
 .third {
   padding: 2rem 0;
@@ -145,4 +147,23 @@ figcaption {
 }
 .fourth a {
   outline: 2px solid var(--clr-white);
+}
+@media screen and (min-width: 600px) {
+  .container {
+    width: 75%;
+  }
+  .primary,
+  .cards,
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .primary-text {
+    flex-basis: 80%;
+  }
+  article .text {
+    width: 60%;
+  }
 }
