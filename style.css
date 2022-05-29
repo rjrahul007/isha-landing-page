@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap");
+
+:root {
+  --primary-clr: #ce4521;
+  --secondary-clr: #1f2937;
+  --clr-white: #fff;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+/* Typography */
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.7rem;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #1f2937;
+  color: #f9faf8;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1;
+  padding: 10px 0;
+}
+.footer span {
+  color: red;
+}
+footer a {
+  color: var(--clr-white);
+  text-decoration: 2px underline;
+}
+footer a:hover {
+  color: var(--primary-clr);
+}
+
+/* Layout */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+header {
+  background-color: #e4ded4;
+}
+header a {
+  color: #1f2937;
+}
+nav,
+nav ul,
+.orange-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li {
+  padding: 0 10px;
+}
+.logo {
+  width: 80px;
+  margin-right: auto;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.primary img {
+  margin-top: 1em;
+}
+.primary a {
+  font-size: 1.5rem;
+}
+.primary a,
+.card a,
+.fourth a {
+  border: none;
+  background-color: var(--primary-clr);
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: var(--clr-white);
+}
+.primary a:hover,
+.primary a:focus,
+.card a:hover,
+.fourth a:hover,
+.card a:focus,
+.fourth a:focus {
+  background-color: var(--clr-white);
+  outline: 2px solid var(--primary-clr);
+  color: var(--primary-clr);
+}
+.primary a a:hover,
+.primary a a:focus {
+  color: var(--primary-clr);
+}
+.orange-divider {
+  margin: 0.5em auto;
+}
+
+.card {
+  margin: 2em auto;
+  text-align: center;
+}
+.third {
+  padding: 2rem 0;
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+blockquote {
+  font-style: italic;
+  /* font-size: 36px; */
+}
+figcaption {
+  text-align: right;
+}
+.fourth {
+  background-color: var(--primary-clr);
+  padding: 2rem;
+  margin: 1rem auto;
+  color: var(--clr-white);
+}
+.fourth a {
+  outline: 2px solid var(--clr-white);
+}
